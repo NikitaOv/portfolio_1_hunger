@@ -18,10 +18,11 @@ a {
     margin: 0px auto;
 }
 
-header {
+
+.main {
     background: url("/img/header-bg.png") no-repeat;
     height: 800px;
-    width: 100%;
+    /* width: 100%; */
     background-size: cover;
 }
 
@@ -31,7 +32,7 @@ nav {
     display: inline-flex;
 }
 
-.nav-left, .nav-right {
+.nav-content {
     display: flex;
     width: 530px;
     height: 100px;
@@ -47,7 +48,7 @@ nav {
 }
 
 .logo {
-    margin: 25px 35px;
+    margin: 25px 35px 0px;
 }
 
 .logo img {
@@ -57,7 +58,17 @@ nav {
 
 /* Главное */
 
-.main-items h4 {
+.main-content {
+    margin-top: 156px;
+    
+}
+
+.main-items {
+    text-align: center;
+    position: relative;
+}
+
+.main-items h2 {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.5em;
@@ -68,4 +79,16 @@ nav {
     font-size: 96px;
     font-weight: bold;
     margin: 0px;
+}
+
+.main-h1 ::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5.11px;
+    
+
+    background: #E8C300;
+    border-radius: 50px;
 }
